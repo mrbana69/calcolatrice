@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+    <title>CALCOLATRICE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="stile.css">
+</head>
+<body>
+    <h1>CALCOLATRICE</h1>
+    <div class="calculator-container">
+        <input type="text" id="display" value="0" readonly><br>
+        <button id="C" onclick="azzerra()">C</button>
+        <button id="CE" onclick="cancella()">CE</button>
+        <button id="+" value="+" onclick="op(this.value)">+</button>
+        <button id="-" value="-" onclick="op(this.value)">-</button><br>
+        <button id="7" value="7" onclick="scrivi(this.value)">7</button>
+        <button id="8" value="8" onclick="scrivi(this.value)">8</button>
+        <button id="9" value="9" onclick="scrivi(this.value)">9</button>
+        <button id="*" value="*" onclick="op(this.value)">*</button><br>
+        <button id="4" value="4" onclick="scrivi(this.value)">4</button>
+        <button id="5" value="5" onclick="scrivi(this.value)">5</button>
+        <button id="6" value="6" onclick="scrivi(this.value)">6</button>
+        <button id="/" value="/" onclick="op(this.value)">/</button><br>
+        <button id="1" value="1" onclick="scrivi(this.value)">1</button>
+        <button id="2" value="2" onclick="scrivi(this.value)">2</button>
+        <button id="3" value="3" onclick="scrivi(this.value)">3</button>
+        <button id="=" value="=" onclick="op(this.value)">=</button><br>
+        <button id="m0" value="0" onclick="scrivi(this.value)">0</button>
+        <button id="," value="," onclick="op(this.value)">,</button>
+    </div>
+    <script src="script.js"></script>
+</body>
